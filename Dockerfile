@@ -1,5 +1,5 @@
 # start from a clean base image (replace <version> with the desired release)
-FROM gcr.io/dall-e-67baf/worker-comfyui:11bd671e06f6a9674174b5ebc9a38c8306d7c0d1
+FROM gcr.io/dall-e-67baf/worker-comfyui:e0bb961b44beb32b62c603c548b538ddd1950b8a
 
 # install custom nodes using comfy-cli
 # RUN comfy-node-install comfyui-kjnodes comfyui-ic-light comfyui_ipadapter_plus comfyui_essentials
