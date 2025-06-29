@@ -1,6 +1,8 @@
 # start from a clean base image (replace <version> with the desired release)
 FROM gcr.io/dall-e-67baf/worker-comfyui:e0bb961b44beb32b62c603c548b538ddd1950b8a
 
+RUN git clone https://github.com/city96/ComfyUI-GGUF /comfyui/custom_nodes/ComfyUI-GGUF .\python_embeded\python.exe -s -m pip install -r .\comfyui\custom_nodes\ComfyUI-GGUF\requirements.txt
+
 COPY extra_model_paths.yaml /comfyui/extra_model_paths.yaml
 # install custom nodes using comfy-cli
 # RUN comfy-node-install comfyui-kjnodes comfyui-ic-light comfyui_ipadapter_plus comfyui_essentials
