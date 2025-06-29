@@ -1,7 +1,7 @@
 # start from a clean base image (replace <version> with the desired release)
 FROM gcr.io/dall-e-67baf/worker-comfyui:e0bb961b44beb32b62c603c548b538ddd1950b8a
 
-RUN comfy-node-install ComfyUI-GGUF cg-use-everywhere
+RUN comfy-node-install ComfyUI-GGUF cg-use-everywhere comfyui-videohelpersuite
  
 COPY extra_model_paths.yaml /comfyui/extra_model_paths.yaml
 # install custom nodes using comfy-cli
